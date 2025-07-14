@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Plano Interactivo</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f4f4f4;
+    }
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .plano {
+      width: 100%;
+      display: block;
+    }
+    .icono {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      background: rgba(255, 0, 0, 0.3); /* puntos visibles para revisión */
+    }
+    .icono:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      top: -28px;
+      left: 0;
+      background: rgba(50, 50, 50, 0.85);
+      color: #fff;
+      padding: 4px 8px;
+      font-size: 13px;
+      border-radius: 4px;
+      white-space: nowrap;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="plano.jpg" alt="Plano interactivo" class="plano" />
+
+    <div class="icono" style="top: 42%; left: 53%;" data-tooltip="Casa 80m2-Vivienda sobre meseta alta"></div>
+    <div class="icono" style="top: 42%; left: 60%;" data-tooltip="Taller de cerámica-Producción artesanal + espacio tecnológico"></div>
+    <div class="icono" style="top: 28%; left: 77%;" data-tooltip="Huerta-Cultivo agroecológico"></div>
+    <div class="icono" style="top: 29%; left: 67%;" data-tooltip="Gallinero-Cría de aves,separado de la huerta "></div>
+    <div class="icono" style="top: 35%; left: 83%;" data-tooltip="Compostera-Transformación de residuos orgánicos – fertilizante natural"></div>
+    <div class="icono" style="top: 20%; left: 77%;" data-tooltip="Cuerpo de agua paisajístico - refugio de fauna "></div>
+    <div class="icono" style="top: 17%; left: 75%;" data-tooltip="Cañaveral"></div>
+    <div class="icono" style="top: 51%; left: 42%;" data-tooltip="Cisterna Agua lluvia-Tanque elevado sobre pérgola – recolección de lluvia para riego"></div>
+    <div class="icono" style="top: 48%; left: 50%;" data-tooltip="Clarificador de paja - Filtro inicial de aguas grises, retención de sólidos"></div>
+    <div class="icono" style="top: 50%; left: 55%;" data-tooltip="Filtro de grasas - Segunda etapa de depuración, separa grasas"></div>
+    <div class="icono" style="top: 47%; left: 63%;" data-tooltip="Humedal-Fitodepurardora-Depuración final a través de plantas acuáticas"></div>
+    <div class="icono" style="top: 48%; left: 61%;" data-tooltip="Biofiltro"></div>
+    <div class="icono" style="top: 32%; left: 50%;" data-tooltip="Bicicletero-Espacio para resguardo de bicicletas – acceso principal"></div>
+    <div class="icono" style="top: 38%; left: 49%;" data-tooltip="Sendero peatonal-Senderos internos: conexión peatonal con huerta, estanque y compost."></div>
+    <div class="icono" style="top: 60%; left: 18%;" data-tooltip="Ciclovía-Bicisenda funcional y recreativa: rodea todo el predio"></div>
+    <div class="icono" style="top: 37%; left: 56%;" data-tooltip="Semáforo energético - Visualización simbólica del consumo y producción energética"></div>
+    <div class="icono" style="top: 42%; left: 66%;" data-tooltip="Arduino-Sistema de automatización de riego con sensores"></div>
+    <div class="icono" style="top: 40%; left: 63%;" data-tooltip="Bitácora / Calendario lunar- Registro de observaciones climaticas basadas en el ciclo lunar"></div>
+	<div class="icono" style="top: 33%; left: 43%;" data-tooltip="Estacionamiento vehicular"></div>
+	<div class="icono" style="top: 53%; left: 14%;" data-tooltip="Circulación vehicular – Acceso limitado y ordenado, sin invadir el paisaje"></div>
+	<div class="icono" style="top: 35%; left: 33%;" data-tooltip="Luces LED solares – Iluminación autónoma  para senderos y ciclovía"></div>
+	<div class="icono" style="top: 45%; left: 49%;" data-tooltip="Camara aguas grises – Punto de inicio del circuito de depuracion de aguas grises"></div>
+	<div class="icono" style="top: 30%; left: 46%;" data-tooltip="Sistema off-grid – Sistema solar autónomo para senderos y ciclovía"></div>
+	<div class="icono" style="top: 38%; left: 54%;" data-tooltip="Sistema solar híbrido – Paneles con conexión a red"></div>
+	<div class="icono" style="top: 37%; left: 58%;" data-tooltip="Batería solar – Almacén para uso nocturno y de respaldo"></div>
+	<!-- ÁRBOLES FRUTALES (zona productiva) -->
+<div class="icono" style="top: 35%; left: 71%;" data-tooltip="Frutales – Producción comestible en Zona 1"></div>
+<div class="icono" style="top: 35%; left: 76%;" data-tooltip="Frutales – Producción comestible en Zona 1"></div>
+<div class="icono" style="top: 22%; left: 67%;" data-tooltip="Frutales – Producción comestible en Zona 1"></div>
+
+<!-- ÁRBUSTO PERENNE (protección BAJA) -->
+<div class="icono" style="top: 44%; left: 19%;" data-tooltip="Arbusto perenne (Primera linea) – Cobertura vegetal baja"></div>
+
+<!-- ÁRBOLES CADUCOS (zona este, sombra verano/luz invierno) -->
+<div class="icono" style="top: 43%; left: 14%;" data-tooltip="Árbol caduco (Segunda Linea) – Sombra en verano, luz en invierno"></div>
+
+<!-- ÁRBOLES PERENNE (protección BAJA) -->
+<div class="icono" style="top: 30%; left: 31%;" data-tooltip="Arbol perenne (Tercer linea intercalada) – Filtro visual y de viento todo el año"></div>
+
+<!-- ÁRBOLES DE GRAN PORTE (protección visual + sombra) -->
+<div class="icono" style="top: 35%; left: 15%;" data-tooltip="Árbol de gran porte (Esquinas, bordes más expuestos)– Barrera de viento"></div>
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
